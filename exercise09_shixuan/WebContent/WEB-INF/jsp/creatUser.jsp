@@ -23,24 +23,7 @@
 </head>
 <body>
     <form action="<%=request.getContextPath() %>/confirmAccount"  method="post" >
-    <%
-       request.getSession().setAttribute("userName","shixuan");
-       String userName = (String)request.getSession().getAttribute("userName");
 
-       request.getSession().setAttribute("userAge","");
-       Integer userAge = (Integer)request.getSession().getAttribute("userAge");
-
-       request.getSession().setAttribute("userAgender","");
-       String userAgener = (String)request.getSession().getAttribute("userAgener");
-
-       request.getSession().setAttribute("userAddr","");
-       String userAddr = (String)request.getSession().getAttribute("userAddr");
-
-       request.getSession().setAttribute("userHobby","");
-       String userHobby = (String)request.getSession().getAttribute("userHobby");
-    %>
-
-    <c: set var = "age" value="${age.Beanage}" scope = "session"/>
     <p>
    请登录您的详细信息!
     <p>姓名:</p><input name="">

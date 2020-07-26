@@ -23,24 +23,6 @@
 </head>
 <body>
     <form action="<%=request.getContextPath() %>/homepage"  method="post" >
-    <%
-       request.getSession().setAttribute("userName","shixuan");
-       String userName = (String)request.getSession().getAttribute("userName");
-
-       request.getSession().setAttribute("userAge","");
-       Integer userAge = (Integer)request.getSession().getAttribute("userAge");
-
-       request.getSession().setAttribute("userAgender","");
-       String userAgener = (String)request.getSession().getAttribute("userAgener");
-
-       request.getSession().setAttribute("userAddr","");
-       String userAddr = (String)request.getSession().getAttribute("userAddr");
-
-       request.getSession().setAttribute("userHobby","");
-       String userHobby = (String)request.getSession().getAttribute("userHobby");
-    %>
-
-
 
     <p>
    请登录您的详细信息!
